@@ -1,0 +1,22 @@
+{
+    "name": "sebazamorano/mini",
+    "description": "\"Mini Framework Taller de Laravel\"",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastian Zamorano",
+            "email": "sebazamoranoj@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/http": "^5.4",
+        "illuminate/routing": "^5.4",
+        "illuminate/events": "^5.4"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Mini\\" : "app/"
+        }
+    }
+}
