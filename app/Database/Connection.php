@@ -1,4 +1,7 @@
 <?php
+namespace Mini\Database;
+
+use PDO;
 
 class Connection
 {

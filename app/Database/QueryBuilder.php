@@ -1,4 +1,7 @@
 <?php
+namespace Mini\Database;
+
+use PDO;
 
 class QueryBuilder
 {
@@ -13,11 +16,11 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
-    public function getAll()
+    public function getAll($table)
     {
-        $query = $this->pdo->prepare("select * from tasks");
+        $query = $this->pdo->prepare("select * from {$table}");
         $query->execute();
-        return $query->fetchAll(PDO::FETCH_CLASS);
+        return $query->fetchAll();
     }
 
 
